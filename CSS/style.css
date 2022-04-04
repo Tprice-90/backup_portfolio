@@ -141,5 +141,20 @@ footer {
 	nav ul li {
 		font-size: 2em;
 	}
+
+	#mobilenav {
+        display: block;
+        
+    }
+    
+    
+    #navtoggle {
+        color: #005AA0;
+        text-decoration: none;
+        font-size: 35px;
+        margin-left: 20px;
+        padding: 0;
+        
+    }
 	
 }

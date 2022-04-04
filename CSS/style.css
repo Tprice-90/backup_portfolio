@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'heeboregular';
+    src: url('heebo-variablefont_wght-webfont.eot');
+    src: url('heebo-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('heebo-variablefont_wght-webfont.woff2') format('woff2'),
+         url('heebo-variablefont_wght-webfont.woff') format('woff'),
+         url('heebo-variablefont_wght-webfont.ttf') format('truetype'),
+         url('heebo-variablefont_wght-webfont.svg#heeboregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/***************************************************************
+Website: 
+Author: Terry Price #0622422
+Date: 
+
+----------------------------------------------------------------
+Colours
+ 
+----------------------------------------------------------------
+Font Styles
+
+----------------------------------------------------------------
+Contents
+----------------------------------------------------------------
+1.Body Styles
+2.Heading Styles
+3.Nav Styles
+4.List Styles
+5.Paragraph Styles
+6.Section Styles
+7.Img Styles
+8.Misc Styles
+***************************************************************/
+
+/***************************************************************
+*****BODY STYLES***********************************************/
+body {
+	font-family: 'heeboregular', arial sans-serif;
+	font-size: 62.5%;
+	background: linear-gradient(to bottom, #f5c78e 45%, #c9b69f 70%);
+	background-attachment: fixed;
+}
+/***************************************************************
+*****HEADING STYLES********************************************/
+h1,h2,h3,h4 {
+	display: block;
+}
+
+h1,h2 {
+	display: block;
+	padding: 1.5em 0;
+}
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+	margin-top: 3em;
+}
+
+h2 {
+	font-size: 3.5em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 3.5em;
+	margin-left: 2em;
+}
+
+h4 {
+	text-align: center;
+	font-size: 3.5em;
+}
+
+/***************************************************************
+*****NAV STYLES************************************************/
+nav {
+	display: block;
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	padding: 2em 0;
+}
+
+a:visited {
+	color: grey;
+}
+/***************************************************************
+*****LIST STYLES***********************************************/
+nav ul {
+	display: flex;
+	width: inherit;
+	margin: 2em 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	font-size: 3em;
+}
+/***************************************************************
+*****PARAGRAPH STYLES******************************************/
+p {
+	font-size: 2em;
+}
+
+footer > p {
+	margin-top: 3em;
+	position: relative;
+	text-align: left;
+	float: left;
+	margin-left: 5%;
+}
+/***************************************************************
+*****SECTION STYLES********************************************/
+footer {
+	position: relative;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+}
+/***************************************************************
+*****IMG STYLES************************************************/
+
+/***************************************************************
+*****MISC STYLES***********************************************/
+
+
+@media screen and (max-width: 480px) {
+	nav {
+		overflow: hidden;
+	}
+	
+	nav ul li {
+		font-size: 2em;
+	}
+	
+}

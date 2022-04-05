@@ -81,10 +81,14 @@ nav {
 	display: block;
 	background-color: black;
 	width: 100%;
-	position: fixed;
+	position: relative;
 	top: 0;
 	z-index: 2;
 	padding: 2em 0;
+}
+
+#mobilenav {
+	display: none;
 }
 
 a:visited {
@@ -92,18 +96,23 @@ a:visited {
 }
 /***************************************************************
 *****LIST STYLES***********************************************/
+
 nav ul {
-	display: flex;
-	width: inherit;
-	margin: 2em 0;
+	width: 100%;
+	margin: 0 auto;
 }
 
 nav ul li {
 	display: inline-block;
 	margin: 0 auto;
+	padding: 0 20px;
 	position: relative;
 	z-index: 1;
-	font-size: 3em;
+	font-size: 2em;
+}
+
+nav li a {
+	margin: 20px auto;
 }
 /***************************************************************
 *****PARAGRAPH STYLES******************************************/
@@ -121,10 +130,10 @@ footer > p {
 /***************************************************************
 *****SECTION STYLES********************************************/
 footer {
+	border-top: 3px solid black;
 	position: relative;
 	width: 100%;
 	height: auto;
-	bottom: 0;
 }
 /***************************************************************
 *****IMG STYLES************************************************/
@@ -134,17 +143,58 @@ footer {
 
 
 @media screen and (max-width: 480px) {
-	nav {
-		overflow: hidden;
+	#nav {
+		display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.65);
+        width: 100%;
+        height: auto;
+    }
+    
+    #nav li {
+		width: 100%;
+        padding: 10px 0;
+        display: block;
+        border: none;
+        float: left; 
+        clear: left; 
+        
+    }
+
+	#nav ul {
+		margin: 0;
+		padding: 5px;
 	}
 	
-	nav ul li {
-		font-size: 2em;
+	#nav ul li {
+		margin-left: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
 	}
+    
+    #nav li:first-child {
+        background-color: none;
+        padding: 10px;
+
+    }
+
+    #nav li a {
+        color: #0AACF8;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    #nav {
+        display: none;
+    }
 
 	#mobilenav {
         display: block;
-        
+        position: fixed;
+		z-index: 2;
     }
     
     

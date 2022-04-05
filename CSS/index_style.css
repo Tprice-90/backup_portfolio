@@ -95,28 +95,18 @@ img {
 @media screen and (max-width: 480px) {
 	figure {
 		display: inline-block;
-		width: 45%;
-		float: left;
+		width: 100%;
 	}
 	
 	img {
-		width: 100%;
+		width: 50%;
+		margin: 0 auto;
 	}
 	
 	p {
 		width: 100%;
-		clear: both;
-	}
-	
-	section p:last-of-type {
-		width: 75%;
-	}
-	
-	section p:first-of-type {
-		display: inline-block;
-		width: 45%;
-		clear:none;
-		float: right;
+		font-size: 1em;
+		padding: 0 20px;
 	}
 	
 }

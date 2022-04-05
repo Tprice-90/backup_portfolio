@@ -42,12 +42,7 @@ section:last-of-type article h3 {
 
 /***************************************************************
 *****NAV STYLES************************************************/
-nav {
-	display: block;
-	background-color: black;
-	width: 100%;
-	padding: 2em 0;
-}
+
 /***************************************************************
 *****LIST STYLES***********************************************/
 ul {
@@ -56,7 +51,7 @@ ul {
 }
 
 ul li {
-	font-size: 2em;
+	font-size: 1em;
 	list-style-type: circle;
 	list-style-position:inside;
 }
@@ -102,7 +97,7 @@ section {
 article {
 	width: 100%;
 	box-sizing: border-box;
-	margin: 1em auto;
+	margin: 0.5em auto;
 }
 
 main > section:first-of-type {
@@ -169,6 +164,9 @@ section:last-of-type article:last-of-type img:nth-of-type(2) {
 section:last-of-type article:last-of-type img:nth-of-type(2n+1){
 	transform: rotate(-10deg);
 }
+/***************************************************************
+*****FOOTER STYLES*********************************************/
+
 
 /***************************************************************
 *****MISC STYLES***********************************************/
@@ -185,6 +183,19 @@ section:last-of-type article:last-of-type img:nth-of-type(2n+1){
 	height: auto;
 	overflow: visible;
 	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h2:not(:first-of-type) {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 1em;
+	}
 	
 	img {
 		width: 50%;
@@ -194,13 +205,13 @@ section:last-of-type article:last-of-type img:nth-of-type(2n+1){
 	position: relative;
 	width: 50%;
 	transition: 0.8s;
-}
+	}
 	
 	section:nth-of-type(4) article:first-of-type figure:last-of-type img {
 	width: 50%;
-}
+	}
 
-section:nth-of-type(4) article:first-of-type img:hover {
-	transform: none;
-}
+	section:nth-of-type(4) article:first-of-type img:hover {
+		transform: none;
+	}
 }
